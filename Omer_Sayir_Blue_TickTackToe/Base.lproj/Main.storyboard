@@ -53,13 +53,13 @@ Omer Cagri SAYIR</string>
         <!--X's Story by Omer-->
         <scene sceneID="5Aq-Wl-snb">
             <objects>
-                <tableViewController id="56s-MT-mah" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="NFR-9L-C83">
+                <tableViewController id="56s-MT-mah" customClass="Omer_TableViewController" customModule="Omer_Sayir_Blue_TickTackToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="NFR-9L-C83">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="3Vt-w1-bMc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="omer_tablecell" rowHeight="64" id="3Vt-w1-bMc" customClass="Omer_TableViewCell" customModule="Omer_Sayir_Blue_TickTackToe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="414" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Vt-w1-bMc" id="Ad3-7C-h5d">
@@ -86,6 +86,11 @@ Omer Cagri SAYIR</string>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateTimeLabel" destination="tX8-WU-X0V" id="jb6-wQ-gIw"/>
+                                    <outlet property="whoWon" destination="n3Q-XO-VT0" id="8B9-Ut-6vL"/>
+                                    <outlet property="winLossImage" destination="ZzF-bF-wRZ" id="NpA-C5-UPV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
