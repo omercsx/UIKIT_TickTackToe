@@ -8,13 +8,12 @@
 import UIKit
 
 class Omer_TableViewCell: UITableViewCell {
-
     // MARK: - Outlets
-    
-    @IBOutlet weak var winLossImage: UIImageView!
-    @IBOutlet weak var whoWon: UILabel!
-    @IBOutlet weak var dateTimeLabel: UILabel!
-    
+
+    @IBOutlet var winLossImage: UIImageView!
+    @IBOutlet var whoWon: UILabel!
+    @IBOutlet var dateTimeLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,5 +24,4 @@ class Omer_TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

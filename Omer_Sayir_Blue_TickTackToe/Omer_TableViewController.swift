@@ -31,8 +31,10 @@ class Omer_TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "omer_tablecell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "omer_tablecell", for: indexPath) as! Omer_TableViewCell
 //        Configure the cell...
+        cell.whoWon.text = "O Won"
+        cell.dateTimeLabel.text = Date().formatted(date: .abbreviated, time: .shortened).description
         return cell
     }
 
